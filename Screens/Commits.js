@@ -67,7 +67,7 @@ const Commits = (props) => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <View style={styles.buttonContainer}></View>
+        <View></View>
         <View>
           <Header searchBar rounded>
             <Item style={{ padding: 5 }}>
@@ -122,15 +122,7 @@ const styles = StyleSheet.create({
     marginBottom: 160,
     backgroundColor: "white",
   },
-  buttonContainer: {
-    margin: 20,
-    alignSelf: "center",
-    flexDirection: "row",
-  },
-  buttonText: {
-    marginLeft: 4,
-    color: "white",
-  },
+
 });
 
 export default Commits;

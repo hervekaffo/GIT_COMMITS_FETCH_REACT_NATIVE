@@ -15,7 +15,7 @@ const CommitList = (props) => {
     <View>
       <TouchableOpacity
         onPress={() => {
-          console.log(props)
+          props.navigation.navigate("Commit Detail", { item: props });
         }}
         style={[
           styles.container,
