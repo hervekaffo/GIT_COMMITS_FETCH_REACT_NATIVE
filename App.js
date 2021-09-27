@@ -1,11 +1,17 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { LogBox } from "react-native";
 
+// Navigatiors
+import Main from "./Navigation/Main";
+
+//Ignore all the warning popups
+LogBox.ignoreAllLogs(true);
 
 export default function App() {
   return (
-     <View>
-       <Text>WELCOME TO COMMIT FETCH</Text>
-     </View>  
+        <NavigationContainer>
+          <Main />
+        </NavigationContainer>
   );
 }
